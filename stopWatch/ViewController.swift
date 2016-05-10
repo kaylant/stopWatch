@@ -14,21 +14,21 @@ class ViewController: UIViewController {
     
     var time = 0
     
+    
     @IBOutlet var timerLabel: UILabel!
     
-    func incrTimer() {
+    func increaseTimer() {
         
         time += 1
         
-        timerLabel.text = "\(time)"
+        timerLabel.text = String(time)
         
     }
     
-    
     @IBAction func play(sender: AnyObject) {
         
-        timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: #selector(ViewController.incrTimer), userInfo: nil, repeats: true)
-    
+            timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: #selector(ViewController.increaseTimer), userInfo: nil, repeats: true)
+        
     }
     
     @IBAction func pause(sender: AnyObject) {
@@ -37,23 +37,24 @@ class ViewController: UIViewController {
         
     }
     
-    
     @IBAction func reset(sender: AnyObject) {
         
         timer.invalidate()
         
         time = 0
         
-        timerLabel.text = "0"
-        
+        timerLabel.text = String(0)
     }
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+
         
+
     }
+    
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
