@@ -14,6 +14,9 @@ class ViewController: UIViewController {
     
     var time = 0
     
+    var minutes = 0
+    
+    var hours = 0
     
     @IBOutlet var timerLabel: UILabel!
     
@@ -27,9 +30,27 @@ class ViewController: UIViewController {
     
     @IBAction func play(sender: AnyObject) {
         
-            timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: #selector(ViewController.increaseTimer), userInfo: nil, repeats: true)
+        timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: #selector(ViewController.increaseTimer), userInfo: nil, repeats: true)
         
     }
+    
+    
+    @IBAction func convertToMinutes(sender: AnyObject) {
+        
+        minutes = time / 60
+        
+        timerLabel.text = String(minutes)
+        
+    }
+    
+    @IBAction func convertToHours(sender: AnyObject) {
+        
+        hours = time / 3600
+        
+        timerLabel.text = String(hours)
+        
+    }
+    
     
     @IBAction func pause(sender: AnyObject) {
         
