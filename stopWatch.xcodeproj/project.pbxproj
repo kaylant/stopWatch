@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		672754DD1CE3BDE100EB72B1 /* Readme.md in Sources */ = {isa = PBXBuildFile; fileRef = 672754DC1CE3BDE100EB72B1 /* Readme.md */; };
+		679393B81CE3BBB600049B11 /* stopWatch in Resources */ = {isa = PBXBuildFile; fileRef = 679393B71CE3BBB600049B11 /* stopWatch */; };
 		67F8F4301CDD03AF009B2931 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F8F42F1CDD03AF009B2931 /* AppDelegate.swift */; };
 		67F8F4321CDD03AF009B2931 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F8F4311CDD03AF009B2931 /* ViewController.swift */; };
 		67F8F4351CDD03AF009B2931 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67F8F4331CDD03AF009B2931 /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		672754DC1CE3BDE100EB72B1 /* Readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
+		679393B71CE3BBB600049B11 /* stopWatch */ = {isa = PBXFileReference; lastKnownFileType = folder; path = stopWatch; sourceTree = "<group>"; };
 		67F8F42C1CDD03AF009B2931 /* stopWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = stopWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67F8F42F1CDD03AF009B2931 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67F8F4311CDD03AF009B2931 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +42,8 @@
 		67F8F4231CDD03AF009B2931 = {
 			isa = PBXGroup;
 			children = (
+				672754DC1CE3BDE100EB72B1 /* Readme.md */,
+				679393B71CE3BBB600049B11 /* stopWatch */,
 				67F8F42E1CDD03AF009B2931 /* stopWatch */,
 				67F8F42D1CDD03AF009B2931 /* Products */,
 			);
@@ -124,6 +130,7 @@
 			files = (
 				67F8F43A1CDD03AF009B2931 /* LaunchScreen.storyboard in Resources */,
 				67F8F4371CDD03AF009B2931 /* Assets.xcassets in Resources */,
+				679393B81CE3BBB600049B11 /* stopWatch in Resources */,
 				67F8F4351CDD03AF009B2931 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,6 +144,7 @@
 			files = (
 				67F8F4321CDD03AF009B2931 /* ViewController.swift in Sources */,
 				67F8F4301CDD03AF009B2931 /* AppDelegate.swift in Sources */,
+				672754DD1CE3BDE100EB72B1 /* Readme.md in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +294,7 @@
 				67F8F4401CDD03AF009B2931 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
